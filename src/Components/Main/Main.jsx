@@ -9,6 +9,7 @@ import { PiBagFill } from "react-icons/pi";
 import { GiServerRack } from "react-icons/gi";
 import { MdOutlineSwapHorizontalCircle, MdOutlineWebStories } from "react-icons/md";
 import { TfiEmail } from "react-icons/tfi";
+import About from "./About/About";
 
 const Main = () => {
     return (
@@ -30,7 +31,14 @@ const Main = () => {
                         AiOutlineHome={AiOutlineHome}
                         AiOutlineUser={AiOutlineUser}
                     />
-                    <Home AiOutlineHome={AiOutlineHome} />
+
+                    <section>
+                        <Home AiOutlineHome={AiOutlineHome} />
+                    </section>
+
+                    <section className="mt-40">
+                        <About AiOutlineUser={AiOutlineUser} />
+                    </section>
                 </section>
             </div>
         </>

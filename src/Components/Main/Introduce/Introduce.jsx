@@ -11,10 +11,14 @@ const Home = ({ AiOutlineHome }) => {
         <>
             <SectionHeader
                 text="INTRODUCE"
-                icon={<AiOutlineHome size={13.9} />}
+                icon={<AiOutlineHome size={14} />}
                 content={content}
                 specialContent={specialContent}
                 secondaryContent={secondaryContent}
+                size="text-[76px]"
+                mdsize="max-[788px]:text-[56px]"
+                smsize="max-[585px]:text-[50px]"
+                lading='leading-[80px]'
             />
 
             <p className="max-w-[480px] text-secondary text-[17px] mb-8">
