@@ -1,7 +1,7 @@
-import React from "react";
 import SectionHeader from "../SectionHeader";
 
 const About = ({ AiOutlineUser }) => {
+
     return (
         <>
             <SectionHeader
@@ -9,8 +9,8 @@ const About = ({ AiOutlineUser }) => {
                 size="text-[48px]"
                 smsize="max-[585px]:text-[38px]"
                 text={"ABOUT"}
-                content={"Every great design begin withan even "}
-                specialContent={"better story"}
+                content={"Coding is the way to communicate with   "}
+                specialContent={"computers"}
                 lading="leading-[70px]"
             />
             <ul className="text-secondary flex flex-col gap-5">
@@ -19,7 +19,7 @@ const About = ({ AiOutlineUser }) => {
                         I am <span className="text-primary">Sanan</span>,
                     </h1>
                     <p className="ps-2 leading-7">
-                        a passionate web developer with 6 months of intensive web development experience. I can take your projects to the
+                        A passionate web developer with 6 months of intensive web development experience. I can take your projects to the
                         next level with my expertise in front-end technologies.
                     </p>
                 </li>

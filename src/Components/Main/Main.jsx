@@ -10,6 +10,7 @@ import { GiServerRack } from "react-icons/gi";
 import { MdOutlineSwapHorizontalCircle, MdOutlineWebStories } from "react-icons/md";
 import { TfiEmail } from "react-icons/tfi";
 import About from "./About/About";
+import Resume from "./Resume/Resume";
 
 const Main = () => {
     return (
@@ -38,6 +39,10 @@ const Main = () => {
 
                     <section className="mt-40">
                         <About AiOutlineUser={AiOutlineUser} />
+                    </section>
+
+                    <section className="mt-40">
+                        <Resume PiBagFill={PiBagFill}/>
                     </section>
                 </section>
             </div>
