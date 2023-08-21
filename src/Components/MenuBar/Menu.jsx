@@ -1,17 +1,17 @@
 import React, { useState } from "react";
 import MenuIcons from "./MenuIcons";
 import { VscMenu } from "react-icons/vsc";
-import { AiOutlineInstagram, AiOutlineGithub, AiOutlineMail } from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 
-const Menu = ({ TfiEmail, MdOutlineWebStories, MdOutlineSwapHorizontalCircle, GiServerRack, AiOutlineHome, AiOutlineUser, PiBagFill }) => {
+const Menu = ({ TfiEmail, MdOutlineWebStories, MdOutlineSwapHorizontalCircle, AiOutlineHome, AiOutlineUser, PiBagFill }) => {
     const [active, setActive] = useState(false);
 
-    window.addEventListener('resize', e => {
-        window.innerWidth > 1220 && setActive(false)
-    })
-    
+    window.addEventListener("resize", (e) => {
+        window.innerWidth > 1220 && setActive(false);
+    });
+
     return (
         <>
             <div
@@ -38,7 +38,6 @@ const Menu = ({ TfiEmail, MdOutlineWebStories, MdOutlineSwapHorizontalCircle, Gi
                         <MenuIcons liActive={true} IconName={AiOutlineHome} actives={active} setActives={setActive} text={"Home"} />
                         <MenuIcons liActive={false} IconName={AiOutlineUser} actives={active} setActives={setActive} text={"About"} />
                         <MenuIcons liActive={false} IconName={PiBagFill} actives={active} setActives={setActive} text={"Resume"} />
-                        <MenuIcons liActive={false} IconName={GiServerRack} actives={active} setActives={setActive} text={"Services"} />
                         <MenuIcons
                             liActive={false}
                             IconName={MdOutlineSwapHorizontalCircle}

@@ -12,5 +12,38 @@ body {
     @apply bg-black text-white overflow-x-hidden;
 }
 .active {
-    @apply text-primary !important 
+    @apply text-primary !important;
+}
+
+.custom:hover .date {
+    @apply text-primary;
+}
+
+.skills:hover > div {
+    @apply border-primary;
+}
+
+.button,
+.project-text {
+    @apply transition-all duration-300;
+}
+
+.button:hover {
+    @apply bg-[#181823] bg-opacity-70 !important;
+}
+
+.proje:hover .button {
+    @apply bg-black text-white;
+}
+
+.proje:hover .project-text {
+    @apply underline;
+}
+
+.tooltip {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 10px;
+    border-color: transparent transparent transparent #404042;
 }

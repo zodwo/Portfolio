@@ -26,10 +26,10 @@ const About = ({ AiOutlineUser }) => {
 
                 <li>
                     <h2 className="font-bold">
-                        UI <span className="text-[#213363]">Frameworks</span>:{" "}
+                        UI <span className="text-[#213363]">Frameworks</span>
                     </h2>
                     <p className="ps-2 leading-7">
-                        I can effectively use popular UI frameworks like Bootstrap and Tailwind CSS to develop fast and beautiful user
+                        I can effectively use popular UI frameworks like <b>Bootstrap</b> and <b>Tailwind</b> CSS to develop fast and beautiful user
                         interfaces. This allows me to speed up your projects and provide an excellent user experience.
                     </p>
                 </li>
@@ -39,7 +39,7 @@ const About = ({ AiOutlineUser }) => {
                         <span className="text-[#1B6B93]">JavaScript</span>:
                     </h2>
                     <p className="ps-2 leading-7">
-                        I have experience with both jQuery and modern JavaScript libraries and frameworks, particularly React. With my
+                        I have experience with both <b>jQuery</b> and modern JavaScript libraries and frameworks, particularly <b className="text-[#068DA9]">React</b>. With my
                         skills in creating interactive web applications and managing data-driven processes, I can facilitate user
                         interaction on your website.
                     </p>

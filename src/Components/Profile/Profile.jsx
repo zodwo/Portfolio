@@ -53,7 +53,7 @@ const Profile = () => {
             <a
                 className=" flex items-center justify-center gap-3 bg-primary h-12 rounded-full text-black 
                 hover:bg-black hover:text-primary hover:border border-primary transition-all duration-300"
-                href="#contact"
+                href="#Contact"
             >
                 <AiOutlineMail size={20} /> HIRE ME!
             </a>

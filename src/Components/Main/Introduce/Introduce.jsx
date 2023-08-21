@@ -18,7 +18,7 @@ const Home = ({ AiOutlineHome }) => {
                 size="text-[76px]"
                 mdsize="max-[788px]:text-[56px]"
                 smsize="max-[585px]:text-[50px]"
-                lading='leading-[80px]'
+                lading="leading-[80px]"
             />
 
             <p className="max-w-[480px] text-secondary text-[17px] mb-8">
@@ -26,13 +26,13 @@ const Home = ({ AiOutlineHome }) => {
             </p>
 
             <div className="flex justify-end">
-                <a href="#portfolio" className="relative flex items-center justify-center h-44 w-44 border border-border rounded-full">
+                <a href="#Portfolio" className="relative flex items-center justify-center h-44 w-44 border border-border rounded-full">
                     <BsArrowDown size={34} />
                     <img className="absolute animate-spin-slow  " src={RotateImg} alt="r" />
                 </a>
             </div>
 
-            <div className="flex gap-32">
+            <div className="flex justify-between max-w-[380px] ">
                 <div className="mt-8">
                     <h1 className="text-primary text-[72px] mb-10 leading-10 ">1+</h1>
                     <p className=" text-secondary uppercase w-32">Years of Experience</p>

@@ -1,16 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
 
-const MenuIcons = ({ IconName, liActive, text, actives, setActives }) => {
+const MenuIcons = ({ IconName, text, actives, liActive }) => {
+    //
+
+    const handleItemClick = (li) => {
+        const allLink = document.querySelectorAll(".customButton");
+
+        allLink.forEach((link) => {
+            link.classList.remove("active");
+        });
+
+        li.classList.add("active");
+        scrollHandler();
+    };
+
+    const scrollHandler = () => {
+        const sections = document.querySelectorAll(".custom-section");
+        const allLink = document.querySelectorAll(".customButton");
+
+        sections.forEach((section) => {
+            allLink.forEach((link) => {
+                const a = link.querySelector("a");
+                const id = section.getAttribute("id");
+
+                if (section.getBoundingClientRect().top <= 200) {
+                    if (a.getAttribute("href") == `#${id}`) {
+                        link.classList.add("active");
+                    } else {
+                        link.classList.remove("active");
+                    }
+                }
+            });
+        });
+    };
+
+    window.addEventListener("scroll", scrollHandler);
+
+    const [mouse, setMouse] = useState(false);
+
+    const mouseHandler = () => {
+        setMouse(true);
+    };
+
     return (
         <li
+            onMouseEnter={mouseHandler}
+            onMouseLeave={() => setMouse(false)}
+            onClick={(e) => handleItemClick(e.currentTarget)}
             className={`${liActive && "active"}
-            ${actives ? "gap-3" : "justify-center  "} 
-            cursor-pointer flex w-full  items-center 
-            hover:text-primary transition-colors duration-200
-            d `}
+            ${actives ? "gap-3" : "justify-center  "} cursor-pointer flex items-center w-full   hover:text-primary 
+            transition-colors duration-200 customButton`}
         >
-            <IconName size={18} />
-            {actives && <span>{text}</span>}
+            <a
+                href={`#${text}`}
+                className={`${actives && "flex items-center gap-3 !justify-normal"} relative w-full flex items-center justify-center`}
+            >
+                <IconName size={18} />
+                <div className={`${mouse ? "absolute left-[-24px] -top-1 " : "hidden"} ${actives && "!block"}`}>
+                    <span
+                        className={`${mouse && "absolute right-0  bg-[#404042] !text-white rounded-full text-[10px] p-2"} `}
+                        role="tooltip"
+                    >
+                        {text}
+                        {mouse && <div className="tooltip absolute -right-2 top-[50%] translate-y-[-50%] "></div>}
+                    </span>
+                </div>
+            </a>
         </li>
     );
 };

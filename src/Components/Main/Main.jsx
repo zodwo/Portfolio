@@ -6,16 +6,23 @@ import BgVideo from "../../Assets/Video/bg2.mp4";
 
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { PiBagFill } from "react-icons/pi";
-import { GiServerRack } from "react-icons/gi";
 import { MdOutlineSwapHorizontalCircle, MdOutlineWebStories } from "react-icons/md";
 import { TfiEmail } from "react-icons/tfi";
 import About from "./About/About";
 import Resume from "./Resume/Resume";
+import Skills from "./Skills/Skills";
+import Portfolio from "./Portfolio/Portfolio";
+import Contact from "./Contact/Contact";
 
 const Main = () => {
     return (
         <>
-            <video className="w-full h-full object-fill opacity-30 fixed top-0 left-0 right-0 bottom-0 -z-10" autoPlay loop muted>
+            <video
+                className="w-full h-full object-fill opacity-30 fixed top-0 left-0 right-0 bottom-0 -z-10"
+                autoPlay={true}
+                loop={true}
+                muted={true}
+            >
                 <source src={BgVideo} />
             </video>
 
@@ -27,22 +34,33 @@ const Main = () => {
                         TfiEmail={TfiEmail}
                         MdOutlineWebStories={MdOutlineWebStories}
                         MdOutlineSwapHorizontalCircle={MdOutlineSwapHorizontalCircle}
-                        GiServerRack={GiServerRack}
                         PiBagFill={PiBagFill}
                         AiOutlineHome={AiOutlineHome}
                         AiOutlineUser={AiOutlineUser}
                     />
 
-                    <section>
+                    <section id="Home" className="custom-section">
                         <Home AiOutlineHome={AiOutlineHome} />
                     </section>
 
-                    <section className="mt-40">
+                    <section className="mt-40 custom-section" id="About">
                         <About AiOutlineUser={AiOutlineUser} />
                     </section>
 
-                    <section className="mt-40">
-                        <Resume PiBagFill={PiBagFill}/>
+                    <section className="mt-40 custom-section" id="Resume">
+                        <Resume PiBagFill={PiBagFill} />
+                    </section>
+
+                    <section className="mt-40 custom-section" id="Skills">
+                        <Skills MdOutlineSwapHorizontalCircle={MdOutlineSwapHorizontalCircle} />
+                    </section>
+
+                    <section className="mt-40 custom-section" id="Portfolio">
+                        <Portfolio MdOutlineWebStories={MdOutlineWebStories} />
+                    </section>
+
+                    <section className="mt-40 custom-section" id="Contact">
+                        <Contact TfiEmail={TfiEmail} />
                     </section>
                 </section>
             </div>
