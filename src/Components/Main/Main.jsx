@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Home from "./Introduce/Introduce";
 import Menu from "../MenuBar/Menu";
 import Profile from "../Profile/Profile";
@@ -13,8 +13,18 @@ import Resume from "./Resume/Resume";
 import Skills from "./Skills/Skills";
 import Portfolio from "./Portfolio/Portfolio";
 import Contact from "./Contact/Contact";
+////
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const Main = () => {
+    useEffect(() => {
+        Aos.init({
+            offset: 100,
+            duration: 700,
+        });
+    }, []);
+
     return (
         <>
             <video
@@ -27,9 +37,8 @@ const Main = () => {
             </video>
 
             <div className="container max-w-[1130px] mx-auto px-3">
-                <section className="container py-16 ms-auto max-w-[770px] max-[1220px]:mx-auto max-[1220px]:py-5">
+                <section className="container pb-16 ms-auto max-w-[770px] max-[1220px]:mx-auto max-[1220px]:py-5">
                     <Profile />
-
                     <Menu
                         TfiEmail={TfiEmail}
                         MdOutlineWebStories={MdOutlineWebStories}

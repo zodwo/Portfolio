@@ -9,7 +9,7 @@ const Portfolio = ({ MdOutlineWebStories }) => {
     const MyProjectItem = Projects.slice(0, endSlice).map((project) => {
         return (
             <div className="mb-10 proje" key={project.id}>
-                <div className="relative cursor-pointer ">
+                <div className="relative cursor-pointer " data-aos="fade-up">
                     <picture>
                         <img className="rounded-3xl min-h-[210px] h-full max-h-[380px] " src={project.img} alt={project.name} />
                     </picture>
@@ -126,6 +126,7 @@ const Portfolio = ({ MdOutlineWebStories }) => {
                 content={"Featured "}
                 specialContent={"Projects"}
                 lading="leading-[70px]"
+                data={"fade-up"}
             />
 
             <div className="">{MyProjectItem}</div>

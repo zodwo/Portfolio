@@ -56,9 +56,9 @@ const MenuIcons = ({ IconName, text, actives, liActive }) => {
                 className={`${actives && "flex items-center gap-3 !justify-normal"} relative w-full flex items-center justify-center`}
             >
                 <IconName size={18} />
-                <div className={`${mouse ? "absolute left-[-24px] -top-1 " : "hidden"} ${actives && "!block"}`}>
+                <div className={`${mouse ? "absolute left-[-10px] -top-1 " : "hidden"} ${actives && "!block"}`}>
                     <span
-                        className={`${mouse && "absolute right-0  bg-[#404042] !text-white rounded-full text-[10px] p-2"} `}
+                        className={`${mouse && "absolute right-0  bg-[#404042] !text-white rounded-md text-[12px] py-1 px-3"} `}
                         role="tooltip"
                     >
                         {text}

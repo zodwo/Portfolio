@@ -1,7 +1,6 @@
 import SectionHeader from "../SectionHeader";
 
 const About = ({ AiOutlineUser }) => {
-
     return (
         <>
             <SectionHeader
@@ -12,8 +11,9 @@ const About = ({ AiOutlineUser }) => {
                 content={"Coding is the way to communicate with   "}
                 specialContent={"computers"}
                 lading="leading-[70px]"
+                data="fade-up"
             />
-            <ul className="text-secondary flex flex-col gap-5">
+            <ul className="text-secondary flex flex-col gap-5" data-aos="fade-up">
                 <li>
                     <h1 className="font-bold text-xl">
                         I am <span className="text-primary">Sanan</span>,
@@ -29,8 +29,8 @@ const About = ({ AiOutlineUser }) => {
                         UI <span className="text-[#213363]">Frameworks</span>
                     </h2>
                     <p className="ps-2 leading-7">
-                        I can effectively use popular UI frameworks like <b>Bootstrap</b> and <b>Tailwind</b> CSS to develop fast and beautiful user
-                        interfaces. This allows me to speed up your projects and provide an excellent user experience.
+                        I can effectively use popular UI frameworks like <b>Bootstrap</b> and <b>Tailwind</b> CSS to develop fast and
+                        beautiful user interfaces. This allows me to speed up your projects and provide an excellent user experience.
                     </p>
                 </li>
 
@@ -39,9 +39,9 @@ const About = ({ AiOutlineUser }) => {
                         <span className="text-[#1B6B93]">JavaScript</span>:
                     </h2>
                     <p className="ps-2 leading-7">
-                        I have experience with both <b>jQuery</b> and modern JavaScript libraries and frameworks, particularly <b className="text-[#068DA9]">React</b>. With my
-                        skills in creating interactive web applications and managing data-driven processes, I can facilitate user
-                        interaction on your website.
+                        I have experience with both <b>jQuery</b> and modern JavaScript libraries and frameworks, particularly{" "}
+                        <b className="text-[#068DA9]">React</b>. With my skills in creating interactive web applications and managing
+                        data-driven processes, I can facilitate user interaction on your website.
                     </p>
                 </li>
             </ul>

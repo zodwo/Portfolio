@@ -10,6 +10,7 @@ const Home = ({ AiOutlineHome }) => {
     return (
         <>
             <SectionHeader
+                className="mt-16"
                 text="INTRODUCE"
                 icon={<AiOutlineHome size={14} />}
                 content={content}
@@ -19,6 +20,7 @@ const Home = ({ AiOutlineHome }) => {
                 mdsize="max-[788px]:text-[56px]"
                 smsize="max-[585px]:text-[50px]"
                 lading="leading-[80px]"
+                data={"fade-down-left"}
             />
 
             <p className="max-w-[480px] text-secondary text-[17px] mb-8">

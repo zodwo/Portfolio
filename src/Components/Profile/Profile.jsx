@@ -10,7 +10,7 @@ const Profile = () => {
             <a
                 href={link}
                 target="_blank"
-                className="w-[50px] 2xl:w-14 h-[50px]  2xl:h-14 rounded-full border border-border hover:border-primary hover:text-primary flex items-center justify-center text-secondary"
+                className="w-[50px] 2xl:w-14 h-[50px]  2xl:h-14 rounded-full border border-border hover:border-primary hover:text-primary flex items-center justify-center text-secondary transition-all duration-300"
             >
                 <ExampleIcon size={22} />
             </a>
@@ -20,9 +20,10 @@ const Profile = () => {
     return (
         <div
             className="max-w-[350px] w-full border-border 
-            border fixed top-[50%] translate-y-[-50%] left-7 rounded-3xl bg-black bg-opacity-70 
+            border fixed top-[15%] translate-y-[-15%]  2xl:top-[10%] 2xl:translate-y-[-10%] left-7 rounded-3xl bg-black bg-opacity-70 
             2xl:h-[764px] h-[664px] 2xl:max-w-[400px] p-8 2xl:p-12 max-[1220px]:relative max-[1220px]:top-0 max-[1220px]:translate-y-0
             max-[1220px]:max-w-full max-[1220px]:left-0 mb-16 "
+            data-aos="fade-down-right"
         >
             <div className="flex items-center justify-between mb-7">
                 <div className="flex ">
