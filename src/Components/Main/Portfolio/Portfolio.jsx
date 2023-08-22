@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SectionHeader from "../SectionHeader";
-import Projects from "../../../Data/Portfolio.json";
+import Projects from "../../../../public/Portfolio.json";
 
 const Portfolio = ({ MdOutlineWebStories }) => {
     const [endSlice, setEndSlice] = useState(3);
