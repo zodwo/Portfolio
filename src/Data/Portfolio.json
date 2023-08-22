@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Personal - Figma Template",
-        "img": "/src/Assets/Img/PageImg/p1.png",
+        "img": "../Assets/Img/PageImg/p1.png",
         "demo": "https://zodwo-portfolio-template.netlify.app/",
         "git": "https://github.com/zodwo/Personal-Template",
         "category": "JavaScript",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "name": "Powerful Digital Solutions Template",
-        "img": "/src/Assets/Img/PageImg/p2.png",
+        "img": "../Assets/Img/PageImg/p2.png",
         "demo": "https://bootstrap-template-gp.netlify.app",
         "git": "https://github.com/zodwo/Gp-Template",
         "category": "JavaScript",
@@ -22,7 +22,7 @@
         {
         "id": 6,
         "name": "Youtube Clone",
-        "img": "/src/Assets/Img/PageImg/p6.png",
+        "img": "../Assets/Img/PageImg/p6.png",
         "demo": "https://youtube-basic-project-zodwo.netlify.app",
         "git": "https://github.com/zodwo/Youtube",
         "category": "Html",
@@ -33,7 +33,7 @@
     {
         "id": 4,
         "name": "Udemy Clone",
-        "img": "/src/Assets/Img/PageImg/p3.png",
+        "img": "../Assets/Img/PageImg/p3.png",
         "demo": "https://luminous-platypus-d3e88e.netlify.app/",
         "git": "https://github.com/zodwo/Udemy",
         "category": "JavaScript",
@@ -46,7 +46,7 @@
     {
         "id": 5,
         "name": "Tinsweet Multi Page Figma Template",
-        "img": "/src/Assets/Img/PageImg/p5.png",
+        "img": "../Assets/Img/PageImg/p5.png",
         "demo": "https://finsweet-2.netlify.app/",
         "git": "https://github.com/zodwo/Tinsweet-figma-project",
         "category": "Html",
@@ -58,7 +58,7 @@
     {
         "id": 7,
         "name": "Lookscout Multi Page Figma Template",
-        "img": "/src/Assets/Img/PageImg/p7.png",
+        "img": "../Assets/Img/PageImg/p7.png",
         "demo": "https://lookscout-figma.netlify.app/",
         "git": "https://github.com/zodwo/Youtube",
         "category": "JavaScript",
@@ -68,7 +68,7 @@
     {
         "id": 3,
         "name": "NFT Market Place",
-        "img": "/src/Assets/Img/PageImg/p4.png",
+        "img": "../Assets/Img/PageImg/p4.png",
         "demo": "https://nft-market-place-s.netlify.app/",
         "git": "https://github.com/zodwo/NFT-Market-Place",
         "category": "Html",
