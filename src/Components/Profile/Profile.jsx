@@ -20,9 +20,9 @@ const Profile = () => {
     return (
         <div
             className="max-w-[350px] w-full border-border 
-            border fixed top-[15%] translate-y-[-15%]  2xl:top-[10%] 2xl:translate-y-[-10%] left-7 rounded-3xl bg-black bg-opacity-70 
+            border   rounded-3xl bg-black bg-opacity-70 
             2xl:h-[764px] h-[664px] 2xl:max-w-[400px] p-8 2xl:p-12 max-[1220px]:relative max-[1220px]:top-0 max-[1220px]:translate-y-0
-            max-[1220px]:max-w-full max-[1220px]:left-0 mb-16 "
+            max-[1220px]:max-w-full max-[1220px]:left-0 max-[1220px]:mb-16  "
             data-aos="fade-down-right"
         >
             <div className="flex items-center justify-between mb-7">

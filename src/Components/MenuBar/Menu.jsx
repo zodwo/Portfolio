@@ -4,14 +4,15 @@ import { VscMenu } from "react-icons/vsc";
 import { AiOutlineInstagram, AiOutlineGithub } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
+import { MdClose } from "react-icons/md";
 
 const Menu = ({ TfiEmail, MdOutlineWebStories, MdOutlineSwapHorizontalCircle, AiOutlineHome, AiOutlineUser, PiBagFill }) => {
     const [active, setActive] = useState(false);
 
     const sizeHandler = () => {
         window.innerWidth > 1220 && setActive(false);
-    }
-    
+    };
+
     window.addEventListener("resize", sizeHandler);
     window.addEventListener("DOMContentLoaded", sizeHandler);
 
@@ -25,14 +26,26 @@ const Menu = ({ TfiEmail, MdOutlineWebStories, MdOutlineSwapHorizontalCircle, Ai
             </div>
 
             <div
-                className={`fixed top-[35%] translate-y-[-35%] right-16  w-14 h-[350px] z-10 
+                className={`fixed top-[50%] translate-y-[-50%] right-16  w-14 h-[350px] z-10 
                 max-[1220px]:top-0 max-[1220px]:translate-y-0 max-[1220px]:h-full 
                 max-[1220px]:w-[345px] max-[1220px]:bg-[#191919] 
                 ${active ? "max-[1220px]:right-0" : "max-[1220px]:-right-96"} 
-                transition-all delay-100 flex flex-col  `}
+                transition-all delay-100 flex flex-col menus`}
             >
                 <div className={`max-[1220px]:w-[160px] mx-auto ${active && "pt-12"} w-full`}>
-                    {active && <div className="text-xl text-secondary">Menu</div>}
+                    {active && (
+                        <>
+                            <div
+                                className="fixed top-5 right-6"
+                                onClick={() => {
+                                    setActive(false);
+                                }}
+                            >
+                                <MdClose size={32} />
+                            </div>
+                            <div className="text-xl text-secondary">Menu</div>
+                        </>
+                    )}
                     <ul
                         className={`flex flex-col gap-6  border
                         border-border rounded-full text-secondary bg-black bg-opacity-70 py-6 

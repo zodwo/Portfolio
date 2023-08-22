@@ -36,9 +36,12 @@ const Main = () => {
                 <source src={BgVideo} />
             </video>
 
+            <div className="px-3 max-[1220px]:mt-6 min-[1220px]:fixed min-[1220px]:left-0 min-[1220px]:h-full flex items-center  max-w-[770px] mx-auto">
+                <Profile />
+            </div>
+
             <div className="container max-w-[1130px] mx-auto px-3">
                 <section className="container pb-16 ms-auto max-w-[770px] max-[1220px]:mx-auto max-[1220px]:py-5">
-                    <Profile />
                     <Menu
                         TfiEmail={TfiEmail}
                         MdOutlineWebStories={MdOutlineWebStories}
