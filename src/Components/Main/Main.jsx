@@ -27,14 +27,18 @@ const Main = () => {
 
     return (
         <>
-            <video
-                className="w-full h-full object-fill opacity-30 fixed top-0 left-0 right-0 bottom-0 -z-10"
-                autoPlay={true}
-                loop={true}
-                muted={true}
-            >
-                <source src={BgVideo} />
-            </video>
+            {window.innerWidth < 768 ? (
+                <div className="w-full h-full object-fill opacity-30 fixed top-0 left-0 right-0 bottom-0 -z-10 bg-black"></div>
+            ) : (
+                <video
+                    className="w-full h-full object-fill opacity-30 fixed top-0 left-0 right-0 bottom-0 -z-10"
+                    autoPlay={true}
+                    loop={true}
+                    muted={true}
+                >
+                    <source src={BgVideo} />
+                </video>
+            )}
 
             <div className="px-3 max-[1220px]:mt-6 min-[1220px]:fixed min-[1220px]:left-0 min-[1220px]:h-full flex items-center  max-w-[770px] mx-auto">
                 <Profile />

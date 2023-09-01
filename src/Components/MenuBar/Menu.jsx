@@ -13,6 +13,18 @@ const Menu = ({ TfiEmail, MdOutlineWebStories, MdOutlineSwapHorizontalCircle, Ai
         window.innerWidth > 1220 && setActive(false);
     };
 
+    function deactive() {
+        setActive(false);
+        removeEventListener("click", deactive);
+    }
+
+    if (active) {
+        setTimeout(() => {
+            window.addEventListener("click", deactive);
+        }, 200);
+    }
+
+
     window.addEventListener("resize", sizeHandler);
     window.addEventListener("DOMContentLoaded", sizeHandler);
 
@@ -49,7 +61,7 @@ const Menu = ({ TfiEmail, MdOutlineWebStories, MdOutlineSwapHorizontalCircle, Ai
                     <ul
                         className={`flex flex-col gap-6  border
                         border-border rounded-full text-secondary bg-black bg-opacity-70 py-6 
-                        w-full  max-[1220px]:rounded-none  max-[1220px]:bg-inherit max-[1220px]:border-none `}
+                        w-full  max-[1220px]:rounded-none  max-[1220px]:bg-inherit max-[1220px]:border-none`}
                     >
                         <MenuIcons liActive={true} IconName={AiOutlineHome} actives={active} setActives={setActive} text={"Home"} />
                         <MenuIcons liActive={false} IconName={AiOutlineUser} actives={active} setActives={setActive} text={"About"} />
