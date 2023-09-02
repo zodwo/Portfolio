@@ -24,18 +24,21 @@ const Menu = ({ TfiEmail, MdOutlineWebStories, MdOutlineSwapHorizontalCircle, Ai
         }, 200);
     }
 
-
     window.addEventListener("resize", sizeHandler);
     window.addEventListener("DOMContentLoaded", sizeHandler);
 
     return (
         <>
-            <div
-                className="fixed min-[1220px]:hidden max-[800px]:top-[19px] max-[800px]:right-3 top-8 right-16 w-12 h-12 rounded-full border border-border flex items-center justify-center hover:border-primary hover:text-primary cursor-pointer transition-all duration-200 bg-black bg-opacity-80"
-                onClick={() => setActive(true)}
-            >
-                <VscMenu size={20} />
-            </div>
+            {window.innerWidth < 769 ? (
+                ""
+            ) : (
+                <div
+                    className="fixed min-[1220px]:hidden max-[800px]:top-[19px] max-[800px]:right-3 top-8 right-16 w-12 h-12 rounded-full border border-border flex items-center justify-center hover:border-primary hover:text-primary cursor-pointer transition-all duration-200 bg-black bg-opacity-80"
+                    onClick={() => setActive(true)}
+                >
+                    <VscMenu size={20} />
+                </div>
+            )}
 
             <div
                 className={`fixed top-[50%] translate-y-[-50%] right-16  w-14 h-[350px] z-10 
