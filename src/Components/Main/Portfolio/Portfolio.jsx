@@ -3,7 +3,7 @@ import SectionHeader from "../SectionHeader";
 import Projects from "../../../Data/Portfolio.json";
 
 const Portfolio = ({ MdOutlineWebStories }) => {
-    const [endSlice, setEndSlice] = useState(3);
+    const [endSlice, setEndSlice] = useState(2);
 
     const MyProjectItem = Projects.slice(0, endSlice).map((project) => {
         return (
