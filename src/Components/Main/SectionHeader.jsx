@@ -4,7 +4,7 @@ const InfoButton = ({ icon, text, content, specialContent, secondaryContent, siz
     return (
         <>
             <div
-                className={`${className} inline-flex items-center px-5 py-2 border border-border gap-3 rounded-3xl mb-12`}
+                className={`${className} inline-flex items-center px-5 py-2 border border-border gap-3 rounded-3xl mb-12 mt-8`}
                 data-aos={data}
             >
                 {icon}

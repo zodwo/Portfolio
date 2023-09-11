@@ -540,14 +540,6 @@ video {
   width: 100%;
 }
 
-.visible{
-  visibility: visible;
-}
-
-.invisible{
-  visibility: hidden;
-}
-
 .fixed{
   position: fixed;
 }
@@ -604,6 +596,10 @@ video {
   right: 4rem;
 }
 
+.right-6{
+  right: 1.5rem;
+}
+
 .top-0{
   top: 0px;
 }
@@ -612,48 +608,16 @@ video {
   top: 0.75rem;
 }
 
+.top-5{
+  top: 1.25rem;
+}
+
 .top-8{
   top: 2rem;
 }
 
 .top-\[50\%\]{
   top: 50%;
-}
-
-.top-4{
-  top: 1rem;
-}
-
-.right-6{
-  right: 1.5rem;
-}
-
-.right-10{
-  right: 2.5rem;
-}
-
-.top-6{
-  top: 1.5rem;
-}
-
-.top-5{
-  top: 1.25rem;
-}
-
-.right-96{
-  right: 24rem;
-}
-
-.right-\[999999999px\]{
-  right: 999999999px;
-}
-
-.right-\[999999999999999999999999999999999999999px\]{
-  right: 999999999999999999999999999999999999999px;
-}
-
-.right-\[-9999999px\]{
-  right: -9999999px;
 }
 
 .-z-10{
@@ -679,10 +643,6 @@ video {
 
 .mb-12{
   margin-bottom: 3rem;
-}
-
-.mb-16{
-  margin-bottom: 4rem;
 }
 
 .mb-2{
@@ -849,11 +809,6 @@ video {
   width: 100%;
 }
 
-.w-max{
-  width: -moz-max-content;
-  width: max-content;
-}
-
 .max-w-\[1130px\]{
   max-width: 1130px;
 }
@@ -872,10 +827,6 @@ video {
 
 .max-w-\[770px\]{
   max-width: 770px;
-}
-
-.max-w-\[1220px\]{
-  max-width: 1220px;
 }
 
 .translate-y-\[-50\%\]{
@@ -1022,24 +973,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-red-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#565656\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(86 86 86 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#565656ad\]{
-  background-color: #565656ad;
-}
-
-.bg-\[\#5656567a\]{
-  background-color: #5656567a;
-}
-
 .bg-opacity-70{
   --tw-bg-opacity: 0.7;
 }
@@ -1052,8 +985,32 @@ video {
   background-size: cover;
 }
 
+.\!bg-cover{
+  background-size: cover !important;
+}
+
+.bg-right{
+  background-position: right;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.bg-top{
+  background-position: top;
+}
+
+.bg-left{
+  background-position: left;
+}
+
 .bg-left-top{
   background-position: left top;
+}
+
+.bg-no-repeat{
+  background-repeat: no-repeat;
 }
 
 .object-cover{
@@ -1252,11 +1209,6 @@ video {
   color: rgb(153 153 153 / var(--tw-text-opacity));
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .opacity-30{
   opacity: 0.3;
 }
@@ -1392,11 +1344,6 @@ input[type=number] {
   height: 100%;
 }
 
-.before\:w-full::before{
-  content: var(--tw-content);
-  width: 100%;
-}
-
 .before\:border-l::before{
   content: var(--tw-content);
   border-left-width: 1px;
@@ -1406,12 +1353,6 @@ input[type=number] {
   content: var(--tw-content);
   --tw-border-opacity: 1;
   border-color: rgb(86 86 86 / var(--tw-border-opacity));
-}
-
-.before\:bg-red-50::before{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
 }
 
 .after\:absolute::after{
@@ -1429,11 +1370,6 @@ input[type=number] {
   top: 0px;
 }
 
-.after\:left-0::after{
-  content: var(--tw-content);
-  left: 0px;
-}
-
 .after\:z-10::after{
   content: var(--tw-content);
   z-index: 10;
@@ -1444,19 +1380,9 @@ input[type=number] {
   height: 1rem;
 }
 
-.after\:h-full::after{
-  content: var(--tw-content);
-  height: 100%;
-}
-
 .after\:w-4::after{
   content: var(--tw-content);
   width: 1rem;
-}
-
-.after\:w-full::after{
-  content: var(--tw-content);
-  width: 100%;
 }
 
 .after\:rounded-full::after{
@@ -1468,12 +1394,6 @@ input[type=number] {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(86 86 86 / var(--tw-bg-opacity));
-}
-
-.after\:bg-red-50::after{
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 242 242 / var(--tw-bg-opacity));
 }
 
 .after\:transition-all::after{
@@ -1560,12 +1480,12 @@ input[type=number] {
     margin-right: auto;
   }
 
-  .max-\[1220px\]\:mt-6{
-    margin-top: 1.5rem;
-  }
-
   .max-\[1220px\]\:mb-16{
     margin-bottom: 4rem;
+  }
+
+  .max-\[1220px\]\:mt-6{
+    margin-top: 1.5rem;
   }
 
   .max-\[1220px\]\:h-full{
@@ -1663,10 +1583,6 @@ input[type=number] {
 
   .min-\[1220px\]\:left-0{
     left: 0px;
-  }
-
-  .min-\[1220px\]\:mb-16{
-    margin-bottom: 4rem;
   }
 
   .min-\[1220px\]\:hidden{

@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../Assets/Img/me3.jpg";
+import img from "../../Assets/Img/pp1.jpg";
 import { AiOutlineInstagram, AiOutlineGithub, AiOutlineMail } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
@@ -37,7 +37,10 @@ const Profile = () => {
             </div>
 
             <picture className="block h-[210px] w-[250px] mx-auto 2xl:mx-0 2xl:h-[250px] 2xl:max-w-[300px] 2xl:w-full mb-8 2xl:mb-12  ">
-                <div className=" h-full w-full rounded-3xl bg-left-top bg-cover" style={{ backgroundImage: `url(${img})` }}></div>
+                <div
+                    className=" h-full w-full rounded-3xl bg-left-top bg-cover"
+                    style={{ backgroundImage: `url(${img})`, backgroundSize: "150% 150% " }}
+                ></div>
             </picture>
 
             <h2 className="text-2xl text-center mb-2">sanan.m@div.edu.az</h2>
