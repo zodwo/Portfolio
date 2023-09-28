@@ -22,9 +22,9 @@
         "id": 3,
         "name": "Udemy Clone",
         "img": "./PageImg/p3.png",
-        "demo": "https://luminous-platypus-d3e88e.netlify.app/",
-        "git": "https://github.com/zodwo/Udemy",
-        "category": "JavaScript",
+        "demo": "https://udemy-final-project-zodwo.netlify.app/",
+        "git": "https://github.com/zodwo/udemy-clone-react",
+        "category": "React",
         "perfect": true
     },
 
