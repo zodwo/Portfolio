@@ -19,6 +19,16 @@
     },
 
     {
+        "id": 3,
+        "name": "Udemy Clone",
+        "img": "./PageImg/p3.png",
+        "demo": "https://luminous-platypus-d3e88e.netlify.app/",
+        "git": "https://github.com/zodwo/Udemy",
+        "category": "JavaScript",
+        "perfect": true
+    },
+
+    {
         "id": 6,
         "name": "Youtube Clone",
         "img": "./PageImg/p6.png",
@@ -26,16 +36,6 @@
         "git": "https://github.com/zodwo/Youtube",
         "category": "Html",
         "perfect": false
-    },
-
-    {
-        "id": 3,
-        "name": "Udemy Clone",
-        "img": "./PageImg/p3.webp",
-        "demo": "https://luminous-platypus-d3e88e.netlify.app/",
-        "git": "https://github.com/zodwo/Udemy",
-        "category": "JavaScript",
-        "perfect": true
     },
 
     {

@@ -3,21 +3,33 @@ import SectionHeader from "../SectionHeader";
 import Projects from "../../../Data/Portfolio.json";
 
 const Portfolio = ({ MdOutlineWebStories }) => {
-    const [endSlice, setEndSlice] = useState(2);
+    const [endSlice, setEndSlice] = useState(3);
 
     const MyProjectItem = Projects.slice(0, endSlice).map((project) => {
         return (
             <div className="mb-10 proje" key={project.id}>
                 <div className="relative cursor-pointer " data-aos="fade-up">
                     <picture>
-                        <img className="rounded-3xl min-h-[210px] h-full max-h-[380px] " src={project.img} alt={project.name} />
+                        <img
+                            className="rounded-3xl min-h-[210px] h-full max-h-[380px] "
+                            src={project.img}
+                            alt={project.name}
+                        />
                     </picture>
 
                     <div className="flex gap-4 absolute bottom-4 left-7">
-                        <a className="px-5 py-2 bg-white text-black rounded-2xl button" href={project.git} target="_blank">
+                        <a
+                            className="px-5 py-2 bg-white text-black rounded-2xl button"
+                            href={project.git}
+                            target="_blank"
+                        >
                             GitHub
                         </a>
-                        <a className="px-5 py-2 bg-white text-black rounded-2xl  button" href={project.demo} target="_blank">
+                        <a
+                            className="px-5 py-2 bg-white text-black rounded-2xl  button"
+                            href={project.demo}
+                            target="_blank"
+                        >
                             Live Prewiew
                         </a>
                     </div>
