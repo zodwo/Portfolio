@@ -15,7 +15,6 @@ const MenuIcons = ({ IconName, text, actives, liActive }) => {
     };
 
     const scrollHandler = () => {
-        const sections = document.querySelectorAll(".custom-section");
         const allLink = document.querySelectorAll(".customButton");
 
         sections.forEach((section) => {
@@ -48,21 +47,34 @@ const MenuIcons = ({ IconName, text, actives, liActive }) => {
             onMouseLeave={() => setMouse(false)}
             onClick={(e) => handleItemClick(e.currentTarget)}
             className={`${liActive && "active"}
-            ${actives ? "gap-3" : "justify-center  "} cursor-pointer flex items-center w-full   hover:text-primary 
+            ${
+                actives ? "gap-3" : "justify-center  "
+            } cursor-pointer flex items-center w-full   hover:text-primary 
             transition-colors duration-200 customButton`}
         >
             <a
                 href={`#${text}`}
-                className={`${actives && "flex items-center gap-3 !justify-normal"} relative w-full flex items-center justify-center`}
+                className={`${
+                    actives && "flex items-center gap-3 !justify-normal"
+                } relative w-full flex items-center justify-center`}
             >
-                <IconName size={18} />
-                <div className={`${mouse ? "absolute left-[-10px] -top-1 " : "hidden"} ${actives && "!block"}`}>
+                {IconName}
+                <div
+                    className={`${mouse ? "absolute left-[-10px] -top-1 " : "hidden"} ${
+                        actives && "!block"
+                    }`}
+                >
                     <span
-                        className={`${mouse && "absolute right-0  bg-[#404042] !text-white rounded-md text-[12px] py-1 px-3"} `}
+                        className={`${
+                            mouse &&
+                            "absolute right-0  bg-[#404042] !text-white rounded-md text-[12px] py-1 px-3"
+                        } `}
                         role="tooltip"
                     >
                         {text}
-                        {mouse && <div className="tooltip absolute -right-2 top-[50%] translate-y-[-50%] "></div>}
+                        {mouse && (
+                            <div className="tooltip absolute -right-2 top-[50%] translate-y-[-50%] "></div>
+                        )}
                     </span>
                 </div>
             </a>

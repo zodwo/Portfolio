@@ -1,8 +1,8 @@
 import React from "react";
-import img from "../../Assets/Img/pp1.jpg";
 import { AiOutlineInstagram, AiOutlineGithub, AiOutlineMail } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
+import img from "../../Assets/Img/me.jpg";
 
 const Profile = () => {
     const SocialIcon = ({ ExampleIcon, link }) => {
@@ -28,7 +28,9 @@ const Profile = () => {
             <div className="flex items-center justify-between mb-7">
                 <div className="flex ">
                     <span className="text-[40px] font-bold">Sanan</span>
-                    <div className="w-5 h-5 rounded-full border border-white flex items-center justify-center relative top-3 left-1">S</div>
+                    <div className="w-5 h-5 rounded-full border border-white flex items-center justify-center relative top-3 left-1">
+                        S
+                    </div>
                 </div>
 
                 <div className="text-right">
@@ -38,17 +40,24 @@ const Profile = () => {
 
             <picture className="block h-[210px] w-[250px] mx-auto 2xl:mx-0 2xl:h-[250px] 2xl:max-w-[300px] 2xl:w-full mb-8 2xl:mb-12  ">
                 <div
-                    className=" h-full w-full rounded-3xl bg-left-top bg-cover"
-                    style={{ backgroundImage: `url(${img})`, backgroundSize: "150% 150% " }}
+                    className=" h-full w-full rounded-3xl bg-right bg-cover  "
+                    style={{ backgroundImage: `url(${img})`, backgroundSize: "140% 140% " }}
                 ></div>
             </picture>
 
-            <h2 className="text-2xl text-center mb-2">sanan.m@div.edu.az</h2>
-            <h2 className="text-2xl 2xl:text-[26px] mb-8 max-[1220px]:text-center">Based in Azerbaijan, Baku</h2>
-            <p className="text-center text-secondary text-sm mb-6">© 2023 Sanan. All Rights Reserved</p>
+            <h2 className="text-2xl text-center mb-2">sanan.fwr@gmail.com</h2>
+            <h2 className="text-2xl 2xl:text-[26px] mb-8 max-[1220px]:text-center">
+                Based in Azerbaijan, Baku
+            </h2>
+            <p className="text-center text-secondary text-sm mb-6">
+                © 2023 Sanan. All Rights Reserved
+            </p>
 
             <div className="flex gap-4 items-center justify-center mb-8">
-                <SocialIcon ExampleIcon={AiOutlineInstagram} link={"https://www.instagram.com/17msenan/"} />
+                <SocialIcon
+                    ExampleIcon={AiOutlineInstagram}
+                    link={"https://www.instagram.com/17msenan/"}
+                />
                 <SocialIcon ExampleIcon={FaTwitter} link={"https://twitter.com/classZODWO"} />
                 <SocialIcon ExampleIcon={BsWhatsapp} link={"https://wa.me/+9940505018809"} />
                 <SocialIcon ExampleIcon={AiOutlineGithub} link={"https://github.com/zodwo"} />
