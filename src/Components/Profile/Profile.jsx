@@ -2,7 +2,7 @@ import React from "react";
 import { AiOutlineInstagram, AiOutlineGithub, AiOutlineMail } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
-import img from "../../Assets/Img/me.jpg";
+import img from "../../Assets/Img/myProfileFlipd.jpg";
 
 const Profile = () => {
     const SocialIcon = ({ ExampleIcon, link }) => {
@@ -40,8 +40,8 @@ const Profile = () => {
 
             <picture className="block h-[210px] w-[250px] mx-auto 2xl:mx-0 2xl:h-[250px] 2xl:max-w-[300px] 2xl:w-full mb-8 2xl:mb-12  ">
                 <div
-                    className=" h-full w-full rounded-3xl bg-right bg-cover  "
-                    style={{ backgroundImage: `url(${img})`, backgroundSize: "140% 140% " }}
+                    className=" h-full w-full rounded-3xl bg-left bg-cover  "
+                    style={{ backgroundImage: `url(${img})`, backgroundSize: "120% 140% " }}
                 ></div>
             </picture>
 
